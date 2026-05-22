@@ -1,0 +1,18 @@
+---
+export function getStaticPaths() {
+  return [
+    { params: { category: 'budget' } },
+    { params: { category: 'gaming' } },
+    { params: { category: 'office' } },
+    { params: { category: 'compact' } },
+  ];
+}
+const { category } = Astro.params;
+---
+<html>
+  <head><title>{category} keyboards</title></head>
+  <body>
+    <h1>{category} Mechanical Keyboards</h1>
+    <p>Reviews and guides for {category} mechanical keyboards.</p>
+  </body>
+</html>
