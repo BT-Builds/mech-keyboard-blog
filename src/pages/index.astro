@@ -9,21 +9,21 @@ const articles = (await getCollection('articles')).sort(
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>KeyboardPicks — Mechanical Keyboard Reviews & Buying Guides</title>
-  <meta name="description" content="Honest reviews and buying guides for mechanical keyboards. Budget picks, gaming setups, silent office keyboards, and more.">
+  <title>KeyboardPicks — Mechanical Keyboard Reviews</title>
+  <meta name="description" content="Honest mechanical keyboard reviews and buying guides.">
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; color: #1a1a1a; background: #fff; }
-    header { border-bottom: 1px solid #e5e5e5; padding: 1.5rem 2rem; }
-    header h1 { font-size: 1.4rem; font-weight: 700; }
-    header p { color: #666; font-size: 0.9rem; margin-top: 0.25rem; }
-    main { max-width: 720px; margin: 0 auto; padding: 3rem 2rem; }
-    h2 { font-size: 1.1rem; font-weight: 600; color: #666; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 1.5rem; }
-    .article { border: 1px solid #e5e5e5; border-radius: 8px; padding: 1.5rem; margin-bottom: 1rem; text-decoration: none; display: block; color: inherit; transition: border-color 0.15s; }
-    .article:hover { border-color: #333; }
-    .article h3 { font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem; }
-    .article p { color: #555; font-size: 0.9rem; line-height: 1.5; }
-    footer { border-top: 1px solid #e5e5e5; text-align: center; padding: 2rem; color: #999; font-size: 0.85rem; }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;color:#1a1a1a;background:#fff}
+    header{border-bottom:1px solid #e5e5e5;padding:1.5rem 2rem}
+    header h1{font-size:1.4rem;font-weight:700}
+    header p{color:#666;font-size:.9rem;margin-top:.25rem}
+    main{max-width:720px;margin:0 auto;padding:3rem 2rem}
+    h2{font-size:1.1rem;font-weight:600;color:#666;text-transform:uppercase;letter-spacing:.05em;margin-bottom:1.5rem}
+    a.card{border:1px solid #e5e5e5;border-radius:8px;padding:1.5rem;margin-bottom:1rem;text-decoration:none;display:block;color:inherit;transition:border-color .15s}
+    a.card:hover{border-color:#333}
+    a.card h3{font-size:1.1rem;font-weight:600;margin-bottom:.5rem}
+    a.card p{color:#555;font-size:.9rem;line-height:1.5}
+    footer{border-top:1px solid #e5e5e5;text-align:center;padding:2rem;color:#999;font-size:.85rem}
   </style>
 </head>
 <body>
@@ -33,12 +33,15 @@ const articles = (await getCollection('articles')).sort(
   </header>
   <main>
     <h2>Latest Guides</h2>
-    {articles.map(article => (
-      <a href={} class="article">
-        <h3>{article.data.title}</h3>
-        <p>{article.data.description}</p>
-      </a>
-    ))}
+    {articles.map((article) => {
+      const slug = article.id.replace(/\.md$/, '');
+      return (
+        <a href={'/mech-keyboard-blog/' + slug + '/'} class="card">
+          <h3>{article.data.title}</h3>
+          <p>{article.data.description}</p>
+        </a>
+      );
+    })}
   </main>
   <footer>KeyboardPicks — honest reviews, no fluff</footer>
 </body>
