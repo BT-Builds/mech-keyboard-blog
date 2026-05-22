@@ -2,7 +2,6 @@
 title: 'Best Mechanical Keyboards Under 00 in 2026'
 description: 'Find top mechanical keyboards under $100 for 2026, with specs, best use cases, and affordable picks.'
 pubDate: '2026-05-22'
-slug: 'budget-mechanical-keyboards-under-100'
 ---
 
 ## Intro
