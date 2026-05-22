@@ -146,28 +146,35 @@ declare module 'astro:content' {
   slug: "best-keyboards-typing";
   body: string;
   collection: "articles";
-  data: any
+  data: InferEntrySchema<"articles">
 } & { render(): Render[".md"] };
 "budget-mechanical-keyboards-under-100.md": {
 	id: "budget-mechanical-keyboards-under-100.md";
   slug: "budget-mechanical-keyboards-under-100";
   body: string;
   collection: "articles";
-  data: any
+  data: InferEntrySchema<"articles">
+} & { render(): Render[".md"] };
+"compact-60-mechanical-keyboards.md": {
+	id: "compact-60-mechanical-keyboards.md";
+  slug: "compact-60-mechanical-keyboards";
+  body: string;
+  collection: "articles";
+  data: InferEntrySchema<"articles">
 } & { render(): Render[".md"] };
 "rgb-mechanical-keyboards-gaming.md": {
 	id: "rgb-mechanical-keyboards-gaming.md";
   slug: "rgb-mechanical-keyboards-gaming";
   body: string;
   collection: "articles";
-  data: any
+  data: InferEntrySchema<"articles">
 } & { render(): Render[".md"] };
 "silent-mechanical-keyboards-office.md": {
 	id: "silent-mechanical-keyboards-office.md";
   slug: "silent-mechanical-keyboards-office";
   body: string;
   collection: "articles";
-  data: any
+  data: InferEntrySchema<"articles">
 } & { render(): Render[".md"] };
 };
 
@@ -179,5 +186,5 @@ declare module 'astro:content' {
 
 	type AnyEntryMap = ContentEntryMap & DataEntryMap;
 
-	export type ContentConfig = never;
+	export type ContentConfig = typeof import("../../src/content/config.js");
 }
