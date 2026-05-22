@@ -148,6 +148,20 @@ declare module 'astro:content' {
   collection: "articles";
   data: any
 } & { render(): Render[".md"] };
+"budget-mechanical-keyboards-under-100.md": {
+	id: "budget-mechanical-keyboards-under-100.md";
+  slug: "budget-mechanical-keyboards-under-100";
+  body: string;
+  collection: "articles";
+  data: any
+} & { render(): Render[".md"] };
+"silent-mechanical-keyboards-office.md": {
+	id: "silent-mechanical-keyboards-office.md";
+  slug: "silent-mechanical-keyboards-office";
+  body: string;
+  collection: "articles";
+  data: any
+} & { render(): Render[".md"] };
 };
 
 	};
