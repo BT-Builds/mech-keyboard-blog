@@ -155,6 +155,13 @@ declare module 'astro:content' {
   collection: "articles";
   data: any
 } & { render(): Render[".md"] };
+"rgb-mechanical-keyboards-gaming.md": {
+	id: "rgb-mechanical-keyboards-gaming.md";
+  slug: "rgb-mechanical-keyboards-gaming";
+  body: string;
+  collection: "articles";
+  data: any
+} & { render(): Render[".md"] };
 "silent-mechanical-keyboards-office.md": {
 	id: "silent-mechanical-keyboards-office.md";
   slug: "silent-mechanical-keyboards-office";
