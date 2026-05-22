@@ -18,7 +18,7 @@ A solid typing experience doesn't have to break the bank. Below are the best mec
 
 **Best for:** Gamers who need fast response and a compact layout. The sturdy frame holds up to heavy key presses, and the RGB adds flair without extra cost.  
 
-[LINK: Redragon K552 Mechanical Gaming Keyboard on Amazon]
+[Redragon K552](https://www.amazon.com/dp/B00MOTORJA/?tag=keyboardpicke-20)
 
 ### 2. Aukey Mechanical Keyboard KM-G9  
 
@@ -30,7 +30,7 @@ A solid typing experience doesn't have to break the bank. Below are the best mec
 
 **Best for:** Writers who prefer a quiet, smooth glide. The linear Gateron Reds reduce finger fatigue, while the full‑size layout keeps the number pad handy for data entry.  
 
-[LINK: Aukey Mechanical Keyboard KM-G9 on Amazon]
+[Aukey KM-G9](https://www.amazon.com/s?k=aukey+mechanical+keyboard&tag=keyboardpicke-20)
 
 ### 3. HyperX Alloy FPS Pro  
 
@@ -42,7 +42,7 @@ A solid typing experience doesn't have to break the bank. Below are the best mec
 
 **Best for:** E‑sport enthusiasts who want minimal latency and a low‑profile look. The steel chassis adds weight for a stable typing surface, and the lack of lighting saves power.  
 
-[LINK: HyperX Alloy FPS Pro on Amazon]
+[HyperX Alloy FPS Pro](https://www.amazon.com/dp/B077HWRM58/?tag=keyboardpicke-20)
 
 ### 4. Logitech G413 Carbon  
 
@@ -54,7 +54,7 @@ A solid typing experience doesn't have to break the bank. Below are the best mec
 
 **Best for:** Professionals who need comfort during long sessions. The built‑in palm rest supports wrist alignment, and the Romer‑G switches give a satisfying bump without loud clicks.  
 
-[LINK: Logitech G413 Carbon on Amazon]
+[Logitech G413](https://www.amazon.com/dp/B07CXL7X5F/?tag=keyboardpicke-20)
 
 ## Final Recommendation  
 
