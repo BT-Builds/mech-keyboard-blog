@@ -4,7 +4,7 @@ import { getCollection } from 'astro:content';
 export async function getStaticPaths() {
   const articles = await getCollection('articles').catch(() => []);
   return articles.map(entry => ({
-    params: { slug: entry.slug },
+    params: { slug: entry.id.replace(/\.md$/, '') },
     props: { entry },
   }));
 }
@@ -12,9 +12,45 @@ export async function getStaticPaths() {
 const { entry } = Astro.props;
 const { Content } = entry ? await entry.render() : { Content: null };
 ---
-<html>
-  <head><title>{entry?.data?.title || 'Article'}</title></head>
-  <body>
-    {Content ? <Content /> : <p>Article not found</p>}
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{entry?.data?.title || 'Article'} — KeyboardPicks</title>
+  <meta name="description" content={entry?.data?.description || ''}>
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;color:#1a1a1a;background:#fff;line-height:1.6}
+    header{border-bottom:1px solid #e5e5e5;padding:1rem 2rem}
+    header a{text-decoration:none;color:#1a1a1a;font-weight:700;font-size:1.1rem}
+    main{max-width:720px;margin:0 auto;padding:3rem 2rem}
+    h1{font-size:1.8rem;font-weight:700;margin-bottom:1rem;line-height:1.3}
+    .meta{color:#888;font-size:0.85rem;margin-bottom:2rem}
+    .content h2{font-size:1.3rem;font-weight:700;margin:2rem 0 0.75rem}
+    .content h3{font-size:1.1rem;font-weight:600;margin:1.5rem 0 0.5rem}
+    .content p{margin-bottom:1rem;color:#333}
+    .content a{color:#0066cc;text-decoration:underline;font-weight:500}
+    .content a:hover{color:#004499}
+    .content ul,.content ol{margin:0.75rem 0 1rem 1.5rem}
+    .content li{margin-bottom:0.4rem}
+    .content strong{font-weight:600}
+    .disclosure{background:#f5f5f5;border-radius:6px;padding:0.75rem 1rem;font-size:0.8rem;color:#666;margin-top:3rem}
+    footer{border-top:1px solid #e5e5e5;text-align:center;padding:2rem;color:#999;font-size:0.85rem;margin-top:3rem}
+  </style>
+</head>
+<body>
+  <header>
+    <a href="/mech-keyboard-blog/">KeyboardPicks</a>
+  </header>
+  <main>
+    <h1>{entry?.data?.title}</h1>
+    <p class="meta">{entry?.data?.pubDate}</p>
+    <div class="content">
+      {Content ? <Content /> : <p>Article not found</p>}
+    </div>
+    <div class="disclosure">As an Amazon Associate I earn from qualifying purchases. Product prices and availability are accurate as of the date published.</div>
+  </main>
+  <footer>KeyboardPicks — honest reviews, no fluff</footer>
+</body>
 </html>
