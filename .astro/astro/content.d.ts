@@ -162,6 +162,20 @@ declare module 'astro:content' {
   collection: "articles";
   data: InferEntrySchema<"articles">
 } & { render(): Render[".md"] };
+"compact-60-percent-keyboards.md": {
+	id: "compact-60-percent-keyboards.md";
+  slug: "compact-60-percent-keyboards";
+  body: string;
+  collection: "articles";
+  data: InferEntrySchema<"articles">
+} & { render(): Render[".md"] };
+"rgb-gaming-keyboards.md": {
+	id: "rgb-gaming-keyboards.md";
+  slug: "rgb-gaming-keyboards";
+  body: string;
+  collection: "articles";
+  data: InferEntrySchema<"articles">
+} & { render(): Render[".md"] };
 "rgb-mechanical-keyboards-gaming.md": {
 	id: "rgb-mechanical-keyboards-gaming.md";
   slug: "rgb-mechanical-keyboards-gaming";
