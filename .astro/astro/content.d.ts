@@ -169,6 +169,13 @@ declare module 'astro:content' {
   collection: "articles";
   data: InferEntrySchema<"articles">
 } & { render(): Render[".md"] };
+"mechanical-keyboards-mac.md": {
+	id: "mechanical-keyboards-mac.md";
+  slug: "mechanical-keyboards-mac";
+  body: string;
+  collection: "articles";
+  data: InferEntrySchema<"articles">
+} & { render(): Render[".md"] };
 "rgb-gaming-keyboards.md": {
 	id: "rgb-gaming-keyboards.md";
   slug: "rgb-gaming-keyboards";
@@ -186,6 +193,13 @@ declare module 'astro:content' {
 "silent-mechanical-keyboards-office.md": {
 	id: "silent-mechanical-keyboards-office.md";
   slug: "silent-mechanical-keyboards-office";
+  body: string;
+  collection: "articles";
+  data: InferEntrySchema<"articles">
+} & { render(): Render[".md"] };
+"wireless-mechanical-keyboards.md": {
+	id: "wireless-mechanical-keyboards.md";
+  slug: "wireless-mechanical-keyboards";
   body: string;
   collection: "articles";
   data: InferEntrySchema<"articles">
